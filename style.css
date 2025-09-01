@@ -1,0 +1,252 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 8%;
+  background: #fff;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #0cb2d3;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color: #00abf0;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  gap: 3rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text span {
+  color: #0cb2d3;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  color: #444;
+  font-size: large;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image .card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+}
+
+.hero-image h4 {
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.hero-image p {
+  font-weight: bold;
+}
+
+.hero-image canvas,
+.dashboard-card canvas {
+  width: 100% !important;
+  height: 150px !important;
+}
+.chart {
+  margin-top: 1rem;
+  height: 80px;
+  background: linear-gradient(to right, #007bff, #66a6ff);
+  border-radius: 6px;
+}
+
+/* Features */
+.features {
+  text-align: center;
+  padding: 4rem 8%;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.green { background: #4ade80; }
+.blue { background: #60a5fa; }
+.purple { background: #a78bfa; }
+.yellow { background: #facc15; }
+
+/* Dashboard Section */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  gap: 3rem;
+}
+
+.dashboard-image .dashboard-card {
+  width: 320px;
+  height: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-text p {
+  color: #444;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 4rem 8%;
+  background: #f9f9f9;
+}
+
+.cta h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 8%;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.footer-links a {
+  margin-right: 1rem;
+  color: #111;
+  text-decoration: none;
+}
+
+.footer-icons a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #111;
+}
