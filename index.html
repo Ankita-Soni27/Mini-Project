@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lorem</title>
+  <title>Velora Insights</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">Lorem<span>AB</span></div>
+    <div class="logo">Velora<span>Insights</span></div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -34,11 +34,11 @@
         smarter with real-time analytics.
       </p>
       <div class="btn-box">
-        <a href="#">Get Started</a>
+        <a href="signup/signup.html">Get Started</a>
       </div>
     </div>
 
-<div class="hero-image">
+<!--<div class="hero-image">
      <div class="card">
         <h4>#</h4>
         <p>#</p>
@@ -47,6 +47,25 @@
         <h4>#</h4>
         <p>#</p>
         <canvas id="salesChart"></canvas>
+    </div>-->
+</div>
+<div class="live-analytics">
+    <h3>Live Analytics</h3>
+    <div class="analytics-item">
+        <span>Visitors</span>
+        <span class="count">1,234</span>
+    </div>
+    <div class="analytics-item">
+        <span>Page Views</span>
+        <span class="count">5,678</span>
+    </div>
+    <div class="analytics-item">
+        <span>New Users</span>
+        <span class="count">56</span>
+    </div>
+    <div class="analytics-item">
+        <span>Bounce Rate</span>
+        <span class="count">45%</span>
     </div>
 </div>
 </section>
@@ -56,24 +75,24 @@
     <h2>Key Features</h2>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="icon green"><a href="#"><i class='bxr  bx-chart-line'  ></i></a></div>
+        <div class="icon green"><i class='bxr  bx-chart-spline'    ></i></div>
         <h3>Sales Analytics</h3>
         <p>Track revenue trends</p>
       </div>
       <div class="feature-card">
-        <div class="icon blue"></div>
+        <div class="icon blue"><i class='bx bx-pie-chart-alt-2'></i></div>
         <h3>Product Insights</h3>
         <p>Find top performers</p>
       </div>
       <div class="feature-card">
-        <div class="icon purple"></div>
+        <div class="icon purple"><i class='bx bx-group'></i></div>
         <h3>Customer Segmentation</h3>
         <p>Know your buyers</p>
       </div>
       <div class="feature-card">
-        <div class="icon yellow"></div>
+        <div class="icon yellow"><i class='bx bx-bar-chart-square'></i></div>
         <h3>Reports & Forecasting</h3>
-        <p>Plan the tuture</p>
+        <p>Plan the future</p>
       </div>
     </div>
   </section>
@@ -81,10 +100,24 @@
   <!-- Dashboard Preview -->
   <section class="dashboard">
     <div class="dashboard-image">
-      <div class="dashboard-card">
-        <canvas id="lineChart"></canvas>
-        <canvas id="barChart"></canvas>
-        <canvas id="pieChart"></canvas>
+      <div class="dashboard-card-live">
+        <h3>Real-Time Traffic</h3>
+        <div class="traffic-item">
+          <span class="traffic-source">Organic Search</span>
+          <span class="traffic-count">2,345</span>
+        </div>
+        <div class="traffic-item">
+          <span class="traffic-source">Direct</span>
+          <span class="traffic-count">1,789</span>
+        </div>
+        <div class="traffic-item">
+          <span class="traffic-source">Referral</span>
+          <span class="traffic-count">987</span>
+        </div>
+        <div class="traffic-item">
+          <span class="traffic-source">Social Media</span>
+          <span class="traffic-count">567</span>
+        </div>
       </div>
     </div>
     <div class="dashboard-text">
